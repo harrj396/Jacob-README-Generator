@@ -5,15 +5,22 @@ const fs = require("fs");
 // TODO: Create an array of questions for user input
 const questions = [
     {
-        type: "input"
-        message: "What would you like to name your project?"
-        name: "Title"
-    }
+        type: "input",
+        message: "What would you like to name your project?",
+        name: "Title",
+    },
 
     {
-        type: "input"
-        message: "Describe your project"
-    }
+        type: "input",
+        message: "Describe your project",
+        name: "description",
+    },
+
+    {
+        type: "input",
+        message: "Add your GITHUB username",
+        name: "username",
+    },
 ];
 
 // TODO: Create a function to write README file
