@@ -19,3 +19,11 @@ function generateMarkdown(data) {
 
 module.exports = generateMarkdown;
 
+# ${data.title}
+
+## Description 
+${data.description}
+
+## Installation
+${data.Installation}
+
