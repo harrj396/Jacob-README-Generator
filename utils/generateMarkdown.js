@@ -14,12 +14,16 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  # ${data.title}
+# ${data.title}
 
 ## Description 
-${data.description}
+  ${data.description}
 
 ## Installation
-${data.Installation}
+  ${data.Installation}
 
+## Contact
+  GitHub Name: ${data.username}
 `;}
+
+module.exports = generateMarkdown
