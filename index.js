@@ -9,7 +9,19 @@ const questions = [
         message: "What would you like to name your project?",
         name: "Title",
     },
-
+    
+    {
+        type: "input",
+        message: "Add your GITHUB username",
+        name: "username",
+    },
+    
+    {
+        type: "input",
+        message: "Add your GITHUB Repo name",
+        name: "repo",
+    },
+    
     {
         type: "input",
         message: "Describe your project",
@@ -18,8 +30,8 @@ const questions = [
 
     {
         type: "input",
-        message: "Add your GITHUB username",
-        name: "username",
+        message: "Describe how to install your project",
+        name: "install"
     },
 ];
 
