@@ -33,11 +33,17 @@ const questions = [
         message: "Describe how to install your project",
         name: "install"
     },
+
+    {
+        type: "list",
+        message: "What type of license do you want?",
+        name: "license",
+    }
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(JSON.stringify(fileName) + "README.md", data, (err)  =>
+    fs.writeFile(String(fileName) + "README.md", data, (err)  =>
     err ? console.log(err) : console.log("Creating README!")
     )
 }
