@@ -37,13 +37,14 @@ const questions = [
     {
         type: "list",
         message: "What type of license do you want?",
+        choices: ["MIT", "Unlicense"],
         name: "license",
     }
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(String(fileName) + "README.md", data, (err)  =>
+function writeToFile(data) {
+    fs.writeFile("README.md", data, (err)  =>
     err ? console.log(err) : console.log("Creating README!")
     )
 }
@@ -52,7 +53,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
         .prompt(questions)
-        .then((results) => writeToFile (results.title, results));
+        .then((results) => writeToFile (MarkDown (results)));
 
     }
 // Function call to initialize app
