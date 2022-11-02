@@ -37,7 +37,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName + "README.md", data, (err)  =>
+    fs.writeFile(JSON.stringify(fileName) + "README.md", data, (err)  =>
     err ? console.log(err) : console.log("Creating README!")
     )
 }
@@ -46,7 +46,8 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
         .prompt(questions)
-        .then((results) => writeToFile(response.name.project, results));
-}
+        .then((results) => writeToFile (results.title, results));
+
+    }
 // Function call to initialize app
 init();
