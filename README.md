@@ -1,12 +1,12 @@
-# asdfsaf
+# Jacob's README Generator
 
-# asdfsaf
+# Jacob's README Generator
 
 ## Description 
-  dfdfd
+  Its a readme generator!  I made this readme with it!
 
 ## Installation
   undefined
 
 ## Contact
-  GitHub Name: asdfsdaf
+  GitHub Name: harrj396
