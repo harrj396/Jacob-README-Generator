@@ -24,6 +24,7 @@ function generateMarkdown(data) {
 
 ## Contact
   GitHub Name: ${data.username}
+  Email: ${data.email}
 `;}
 
 module.exports = generateMarkdown
