@@ -36,20 +36,20 @@ const questions = [
 
     {
         type: "list",
-        message: "What type of license do you want?",
+        message: "What type of license would you like?",
         choices: ["MIT", "Unlicense"],
         name: "license",
     }
 ];
 
-// TODO: Create a function to write README file
+// Function to write the README file
 function writeToFile(data) {
     fs.writeFile("README.md", data, (err)  =>
     err ? console.log(err) : console.log("Creating README!")
     )
 }
 
-// TODO: Create a function to initialize app
+// Function to initialize the app
 function init() {
     inquirer
         .prompt(questions)
