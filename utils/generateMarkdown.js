@@ -20,10 +20,11 @@ function generateMarkdown(data) {
   ${data.description}
 
 ## Installation
-  ${data.Installation}
+  ${data.install}
 
 ## Questions
-  GitHub Name: ${data.username}
+  GitHub User: ${data.username}
+  github.com/${data.username} 
   Email: ${data.email}
 `;}
 
